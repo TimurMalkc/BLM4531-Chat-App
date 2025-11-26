@@ -49,3 +49,9 @@ C:\Users\timur\Desktop\Depo\Coding\DotnetWorkSpace\ChatApp\ChatApp\bin\Debug\net
 C:\Users\timur\Desktop\Depo\Coding\DotnetWorkSpace\ChatApp\ChatApp\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\timur\Desktop\Depo\Coding\DotnetWorkSpace\ChatApp\ChatApp\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\timur\Desktop\Depo\Coding\DotnetWorkSpace\ChatApp\ChatApp\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\timur\Desktop\Depo\Coding\DotnetWorkSpace\ChatApp\ChatApp\obj\Debug\net8.0\ChatApp.sourcelink.json
+C:\Users\timur\Desktop\Depo\Coding\DotnetWorkSpace\ChatApp\ChatApp\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\timur\Desktop\Depo\Coding\DotnetWorkSpace\ChatApp\ChatApp\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\timur\Desktop\Depo\Coding\DotnetWorkSpace\ChatApp\ChatApp\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\timur\Desktop\Depo\Coding\DotnetWorkSpace\ChatApp\ChatApp\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\timur\Desktop\Depo\Coding\DotnetWorkSpace\ChatApp\ChatApp\obj\Debug\net8.0\ChatApp.MvcApplicationPartsAssemblyInfo.cs
