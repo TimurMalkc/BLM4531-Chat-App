@@ -24,6 +24,7 @@
             </div>
 
             <ul class="roomsUl"></ul>
+            <div id="roomsFootDiv"><button id="newGroupBtn">New Group➕</button></div>
         </div>
 
         <div id="subMainDiv">
@@ -35,7 +36,6 @@
             <div id="chatDiv"></div>
 
             <div id="messageDiv">
-                <button id="newGroupBtn">New Group➕</button>
                 <input type="text" id="messageBar" name="messageBar" placeholder="Enter your message">
                 <button id="sendButton" type="submit" class="messageButton">📩</button>
             </div>
@@ -123,55 +123,7 @@
 
 
        
-        async function loadUserList() {
-            const token = sessionStorage.getItem("jwtToken");
-            if (!token) return;
-
-            try {
-                const response = await fetch("/api/userlist/all", {
-                    headers: { "Authorization": "Bearer " + token }
-                });
-
-                if (!response.ok) {
-                    console.error("Failed to fetch user list");
-                    return;
-                }
-
-                const users = await response.json();
-                console.log("Loaded users:", users);
-
-                const roomsUl = $(".roomsUl");
-                roomsUl.find(".userLi").remove(); 
-
-                users.forEach(user => {
-                            roomsUl.append(`
-                    <li class="roomsLi userLi" data-user="${user.username}">
-                        ${user.username}
-                    </li>
-                    `);
-                });
-
-               
-                $(".userLi").off("click").on("click", async function () {
-                    const otherUser = $(this).data("user");
-
-                    if (currentRoom === otherUser) return;
-
-                    currentRoom = otherUser;
-                    $("#chatDiv").empty();
-                    $("#headerSpan").text("💬 " + otherUser);
-
-                    await connection.invoke("JoinPrivateChat", otherUser);
-                });
-
-            } catch (err) {
-                console.error("Error loading users:", err);
-            }
-        }
-
-
-
-
+        
         async function startChat() {
             const token = sessionStorage.getItem("jwtToken");
             console.log("JWT Token before connecting:", token);
@@ -289,7 +241,6 @@
                         </li>
                     `);
                 });
-
 
             $(".userLi").off("click").on("click", async function () {
                 const otherUser = $(this).data("user");

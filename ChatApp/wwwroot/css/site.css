@@ -100,6 +100,14 @@ h2 {
     height: 50px;
 }
 
+#roomsFootDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #012E40;
+    height: 50px;
+}
+
 .roomsSpan {
     text-align: left;
     text-indent: 10px;
@@ -121,7 +129,7 @@ h2 {
 .roomsUl {
     overflow-y: scroll;
     scrollbar-color: rgb(113, 113, 113) rgb(72, 72, 71);
-    height: 520px;
+    height: 440px;
 }
 
 .system-message {
@@ -161,8 +169,7 @@ h2 {
     border-radius: 10px;
     background-color: rgb(41, 41, 41);
     color: rgb(223, 223, 223);
-
-   
+    caret-color: transparent;
 }
 
 #chatSpan{
