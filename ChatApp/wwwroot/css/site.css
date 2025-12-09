@@ -1,19 +1,21 @@
 * {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    caret-color: transparent;
+}
 
-
+:root {
+    --dark: #012E40;
+    --darklight: #024959;
+    --light: #026773;
+    --lightlight: #3CA6A6;
+    --chatscreen: #F2E3D5;
+    --lightlightClicked: #397D7D;
 }
 
 body {
     background-color: blue;
     margin: 0;
 }
-
-h2 {
-    caret-color: transparent;
-}
-
-
 
 #mainDiv {
     display: none;
@@ -32,7 +34,7 @@ h2 {
     position: absolute;
     float: left;
     text-align: center;
-    background-color: #024959;
+    background-color: var(--darklight);
    
 }
 
@@ -43,12 +45,12 @@ h2 {
     text-align: left;
     text-indent: 10px;
     float: right;
-    background-color: #F2E3D5;
+    background-color: var(--chatscreen);
     overflow-y: scroll;
     scrollbar-color: rgb(113, 113, 113) rgb(72, 72, 71);
     height: 550px;
     scroll-behavior: auto;
-    caret-color: transparent;
+    
 
 }
 
@@ -72,11 +74,10 @@ h2 {
     right: 0%;
     width: 100%;
     height: 100px;
-    caret-color: transparent;
 }
 
 #headerDiv {
-    background-color: #026773;
+    background-color: var(--light);
     height: 50px;
     color: aliceblue;
     font-size: 30px;
@@ -87,11 +88,10 @@ h2 {
 }
 
 #headerSpan {
-    background-color: #3CA6A6;
+    background-color: var(--lightlight);
     border-radius: 10px;
     padding-left: 5px;
     padding-right: 5px;
-    caret-color: transparent;
 }
 
 #messageBar {
@@ -113,7 +113,7 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #012E40;
+    background-color: var(--dark);
     height: 50px;
 }
 
@@ -121,7 +121,7 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #012E40;
+    background-color: var(--dark);
     height: 100px;
     position: absolute;
     width: 100%;
@@ -130,11 +130,10 @@ h2 {
 .roomsSpan {
     text-align: left;
     text-indent: 10px;
-    caret-color: transparent;
 }
 
 .roomsLi {
-    background-color: #3CA6A6;
+    background-color: var(--lightlight);
     color: rgb(236, 236, 236);
     border-radius: 15px;
     margin: 5%;
@@ -142,7 +141,7 @@ h2 {
 }
 
 .roomsLi:active {
-    background-color: #397D7D;
+    background-color: var(--lightlightClicked);
 }
 
 .roomsUl {
@@ -179,7 +178,6 @@ h2 {
     border-radius: 10px;
     background-color: rgb(41, 41, 41);
     color: rgb(223, 223, 223);
-    caret-color: transparent;
 }
 
 #newGroupBtn {
@@ -188,10 +186,9 @@ h2 {
     border-radius: 10px;
     background-color: rgb(41, 41, 41);
     color: rgb(223, 223, 223);
-    caret-color: transparent;
 }
 
-#chatSpan{
+#chatSpan {
     color: white;
     font-size: 25px;
 }
@@ -218,6 +215,14 @@ h2 {
 }
 
 #settingsBtn {
+    font-size: 25px;
+    margin: 5px;
+    border-radius: 10px;
+    background-color: rgb(41, 41, 41);
+    color: rgb(223, 223, 223);
+}
+
+#profile {
     font-size: 25px;
     margin: 5px;
     border-radius: 10px;

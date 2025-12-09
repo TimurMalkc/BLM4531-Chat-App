@@ -25,6 +25,7 @@
 
             <ul class="roomsUl"></ul>
             <div id="roomsFootDiv">
+                <button id="profile"></button>
                 <button id="settingsButton" class="messageButton">⚙️</button>
                 <button id="newGroupBtn">💬➕</button>
             </div>
@@ -119,7 +120,8 @@
                 disconnectIfExists();
                 await startChat();
                 await loadGroups();
-  
+                $("#profile").text(username);
+
             } else {
                 alert("Login failed.");
             }
