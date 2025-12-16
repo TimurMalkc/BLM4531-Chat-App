@@ -184,6 +184,25 @@
                 $("#messageBar").val("").focus();
             });
 
+            $("#messageBar").on("keydown", async function(e){
+                if (e.key === "Enter") {
+                    e.preventDefault();
+
+                    if (!currentRoom) return alert("Select a chat first!");
+                
+                    
+                const message = $(this).val().trim();
+                if (!message) return;
+
+                if (currentRoom.startsWith("#")) {
+                    await connection.invoke("SendGroupMessage", currentRoom.substring(1), message);
+                } else {
+                    await connection.invoke("SendPrivateMessage", currentRoom, message);
+                }
+                    $(this).val("").focus();
+                }
+            });
+
         }
 
 

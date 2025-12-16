@@ -47,11 +47,9 @@ body {
     float: right;
     background-color: var(--chatscreen);
     overflow-y: scroll;
-    scrollbar-color: rgb(113, 113, 113) rgb(72, 72, 71);
+    scrollbar-color: rgb(139, 207, 204) rgb(64, 140, 138);
     height: 550px;
     scroll-behavior: auto;
-    
-
 }
 
 #loginDiv {
@@ -138,6 +136,7 @@ body {
     border-radius: 15px;
     margin: 5%;
     font-size: 25px;
+
 }
 
 .roomsLi:active {
@@ -145,9 +144,11 @@ body {
 }
 
 .roomsUl {
-    overflow-y: scroll;
-    scrollbar-color: rgb(113, 113, 113) rgb(72, 72, 71);
+    overflow-y: hidden;
+    scrollbar-color: rgb(139, 207, 204) rgb(64, 140, 138);
+    scroll-behavior: auto;
     height: 513px;
+    padding-left: 5%;
 }
 
 .system-message {
