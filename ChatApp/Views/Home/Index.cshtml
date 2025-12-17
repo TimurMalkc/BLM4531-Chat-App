@@ -127,6 +127,36 @@
             }
         });
 
+        $("#authSection").on("keydown", async function(e){
+            if (e.key === "Enter") {
+                const username = $("#loginUsername").val();
+                const password = $("#loginPassword").val();
+
+                const response = await fetch(apiBase + "/login", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ username, password })
+                });
+
+                if (response.ok) {
+                    const data = await response.json();
+                    sessionStorage.setItem("jwtToken", data.token);
+
+
+                    $("#authSection").hide();
+                    $("#mainDiv").show();
+
+                    disconnectIfExists();
+                    await startChat();
+                    await loadGroups();
+                    $("#profile").text(username);
+
+                }else {
+                    alert("Login failed.");
+                }
+            }
+        });
+
 
        
         
