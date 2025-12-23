@@ -185,7 +185,13 @@
                 messages.forEach(m => {
                     const date = new Date(m.timestamp);
                     const time = date.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });  
-                    $("#chatDiv").append(`<p><strong>${m.user}</strong> [${time}]: ${m.message}</p>`);
+                    if(m.user ==  $("#loginUsername").val()){
+                        $("#chatDiv").append(`<p style="text-align: right; padding-right: 10px;"> [${time}]: ${m.message}</p>`);
+                    }else{  
+                        $("#chatDiv").append(`<p><strong>${m.user}</strong> [${time}]: ${m.message}</p>`);
+
+                    }
+                    
                 });
             });
 
