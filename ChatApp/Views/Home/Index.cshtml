@@ -174,9 +174,12 @@
 
             connection.on("ReceiveMessage", (user, message, timestamp) => {
                     const time = new Date(timestamp).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
-                    $("#chatDiv").append(
-                        `<p><strong>${user}</strong> [${time}]: ${message}</p>`
-                    );
+                    if(user ==  $("#loginUsername").val()){
+                        $("#chatDiv").append(`<p style="text-align: right; padding-right: 10px;"> [${time}]: ${message}</p>`);
+                    }else{
+                        $("#chatDiv").append(`<p><strong>${user}</strong> [${time}]: ${message}</p>`);
+
+                    }
             });
 
             
