@@ -38,7 +38,7 @@
 
             <div id="chatDiv"></div>
 
-            <div id="messageDiv">
+            <div id="barDiv">
                 
                 <input type="text" id="messageBar" name="messageBar" placeholder="Enter your message">
                 <button id="sendButton" type="submit" class="messageButton">📩</button>
@@ -175,9 +175,9 @@
             connection.on("ReceiveMessage", (user, message, timestamp) => {
                     const time = new Date(timestamp).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
                     if(user ==  $("#loginUsername").val()){
-                        $("#chatDiv").append(`<p style="text-align: right; padding-right: 10px;"> [${time}]: ${message}</p>`);
+                        $("#chatDiv").append(`<div class="messageDiv" id="messageDivPov"> <p id="messageP"> ${message} </p> <p id="timeP"> [${time}] </p> </div>`);
                     }else{
-                        $("#chatDiv").append(`<p><strong>${user}</strong> [${time}]: ${message}</p>`);
+                        $("#chatDiv").append(`<div class="messageDiv" id="messageDivOther"> <p id="userP">${user}</p> <p id="messageP"> ${message} </p> <p id="timeP"> [${time}] </p> </div>`);
 
                     }
             });
@@ -189,9 +189,9 @@
                     const date = new Date(m.timestamp);
                     const time = date.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });  
                     if(m.user ==  $("#loginUsername").val()){
-                        $("#chatDiv").append(`<p style="text-align: right; padding-right: 10px;"> [${time}]: ${m.message}</p>`);
+                        $("#chatDiv").append(`<div class="messageDiv" id="messageDivPov"> <p id="messageP"> ${m.message} </p> <p id="timeP"> [${time}] </p> </div>`);
                     }else{  
-                        $("#chatDiv").append(`<p><strong>${m.user}</strong> [${time}]: ${m.message}</p>`);
+                        $("#chatDiv").append(`<div class="messageDiv" id="messageDivOther"> <p id="userP">${m.user}</p> <p id="messageP"> ${m.message} </p> <p id="timeP"> [${time}] </p> </div>`);
 
                     }
                     
