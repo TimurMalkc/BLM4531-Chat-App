@@ -26,7 +26,6 @@
             <ul class="roomsUl"></ul>
             <div id="roomsFootDiv">
                 <button id="profile"></button>
-                <button id="settingsButton" class="messageButton">⚙️</button>
                 <button id="newGroupBtn">💬➕</button>
             </div>
         </div>
@@ -180,6 +179,9 @@
                         $("#chatDiv").append(`<div class="messageDiv" id="messageDivOther"> <p id="userP">${user}</p> <p id="messageP"> ${message} </p> <p id="timeP"> [${time}] </p> </div>`);
 
                     }
+
+                    const chat = $("#chatDiv")[0];
+                    chat.scrollTop = chat.scrollHeight;
             });
 
             
@@ -193,9 +195,11 @@
                     }else{  
                         $("#chatDiv").append(`<div class="messageDiv" id="messageDivOther"> <p id="userP">${m.user}</p> <p id="messageP"> ${m.message} </p> <p id="timeP"> [${time}] </p> </div>`);
 
-                    }
-                    
+                    }     
                 });
+                        const chat = $("#chatDiv")[0];
+        chat.scrollTop = chat.scrollHeight;
+
             });
 
                           

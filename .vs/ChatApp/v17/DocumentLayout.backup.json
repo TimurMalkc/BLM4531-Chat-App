@@ -76,7 +76,7 @@
               "RelativeDocumentMoniker": "ChatApp\\Views\\Home\\Index.cshtml",
               "ToolTip": "C:\\Users\\timur\\Desktop\\Depo\\Coding\\DotnetWorkSpace\\ChatApp\\ChatApp\\Views\\Home\\Index.cshtml*",
               "RelativeToolTip": "ChatApp\\Views\\Home\\Index.cshtml*",
-              "ViewState": "AgIAAKYAAAAAAAAAAAAAALgAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAABcAAAAAAAAAAAAAABsAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-11-24T23:50:17.216Z",
               "IsPinned": true,
@@ -88,9 +88,9 @@
               "Title": "site.css",
               "DocumentMoniker": "C:\\Users\\timur\\Desktop\\Depo\\Coding\\DotnetWorkSpace\\ChatApp\\ChatApp\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "ChatApp\\wwwroot\\css\\site.css",
-              "ToolTip": "C:\\Users\\timur\\Desktop\\Depo\\Coding\\DotnetWorkSpace\\ChatApp\\ChatApp\\wwwroot\\css\\site.css",
-              "RelativeToolTip": "ChatApp\\wwwroot\\css\\site.css",
-              "ViewState": "AgIAAPcAAAAAAAAAAAAAAAwBAAAVAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\timur\\Desktop\\Depo\\Coding\\DotnetWorkSpace\\ChatApp\\ChatApp\\wwwroot\\css\\site.css*",
+              "RelativeToolTip": "ChatApp\\wwwroot\\css\\site.css*",
+              "ViewState": "AgIAANwAAAAAAAAAAAAAAO4AAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2025-11-24T23:51:18.239Z",
               "EditorCaption": ""
@@ -105,8 +105,7 @@
               "RelativeToolTip": "ChatApp\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAEQAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-25T09:42:29.671Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-25T09:42:29.671Z"
             },
             {
               "$type": "Document",

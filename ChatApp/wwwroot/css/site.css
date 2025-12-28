@@ -13,7 +13,7 @@
 }
 
 body {
-    background-color: blue;
+    background-color: #024959;
     margin: 0;
 }
 
@@ -236,6 +236,7 @@ body {
     border-radius: 10px;
     background-color: rgb(41, 41, 41);
     color: rgb(223, 223, 223);
+    overflow-wrap: break-word;
 }
 
 .messageDiv {
